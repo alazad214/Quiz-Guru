@@ -33,7 +33,11 @@ class _SplashState extends State<Splash> {
               child: Container(
                   clipBehavior: Clip.antiAlias,
                   decoration: const BoxDecoration(shape: BoxShape.circle),
-                  child: Image.asset("assets/images/logo.png", height: 100))),
+                  child: Image.asset(
+                    "assets/images/logo.png",
+                    height: 100,
+                    width: 100,
+                  ))),
         )
       ],
     ));
