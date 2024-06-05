@@ -5,7 +5,7 @@ import 'package:quizguru/pages/splash.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(statusBarColor: Colors.red.withOpacity(0.7)));
+      const SystemUiOverlayStyle(statusBarColor: Colors.lightBlue));
   runApp(const MyApp());
 }
 

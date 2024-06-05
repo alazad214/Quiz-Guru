@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizguru/widgets/header_section.dart';
 import 'package:quizguru/widgets/slider.dart';
 
 class Home extends StatelessWidget {
@@ -8,10 +9,12 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
         body: SafeArea(
-            child: Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [SliderItem()],
+            child: SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [HeaderSection(), SliderItem()],
+      ),
     )));
   }
 }
